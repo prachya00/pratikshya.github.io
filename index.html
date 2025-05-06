@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VELOUR MUSE</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <style>
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f0f0f0 50%, #e5a9b4 50%);
+  color: #333;
+  padding: 20px;
+  position: relative;
+  height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 20px;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.hero {
+  position: relative;
+  height: 100%;
+}
+
+.brand-title {
+  font-size: 14rem;
+  font-weight: 200;
+  letter-spacing: -2px;
+  margin: 60px 0 10px 0;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  z-index: 0;
+}
+
+.velour {
+  color: #000;
+}
+
+.muse {
+  color: #000;
+  font-style: italic;
+}
+
+
+.product-card {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.8);
+  padding: 10px;
+  border-radius: 10px;
+  width: 280px;
+  position: absolute;
+  z-index: 2;
+}
+
+.left-card {
+  top: 10%;
+  left: 5%;
+}
+
+.right-card {
+  top: 55%;
+  left: 60%;
+}
+
+.product-img-placeholder {
+  width: 60px;
+  height: 60px;
+  background-color: #888;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-name {
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.product-price {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.rating {
+  font-size: 1rem;
+  color: #444;
+}
+
+.add-btn {
+  background-color: white;
+  border: 2px solid #ddd;
+  font-size: 1.2rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.description-box {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  max-width: 500px;
+}
+
+.intro-text {
+  color: #e88ea3;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.shop-now {
+  background-color: #e88ea3;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px #000;
+}
+
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.modelimage{
+  width: 280px;
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  z-index: 1;
+  border-radius: 10px;
+  background-color: #e5a9b4; /* match your gradient background */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.bottom-right-thumbnails {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.bottom-right-thumbnails img {
+  width: 200px;
+  height:200px;
+  object-fit: fill;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.bottom-right-thumbnails img:hover {
+  transform: scale(1.1);
+}
+  </style>
+</head>
+
+
+
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-links">
+        <a href="body.html">Home</a>
+        <a href="body.html">Shop</a>
+        <a href="#">Categories</a>
+        <a href="about.html">About</a>
+        
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="hero">
+    <!-- Left product card -->
+    <div class="product-card left-card">
+      <img src="https://i.pinimg.com/236x/68/fd/52/68fd52704d9cb0366a7eee1c51a19fad.jpg" alt="Product Image" class="product-img"/>
+      <div class="product-info">
+        <div class="product-name">A MASTERPIECE</div>
+        <div class="product-price">$256.99</div>
+        <div class="rating">★★★★☆</div>
+      </div>
+      <button class="add-btn">+</button>
+    </div>
+
+    <!-- Brand title with model placeholder -->
+    <div class="center-content">
+      <h1 class="brand-title">
+        <span class="velour">Velour</span>      <span class="muse">Muse</span>
+    
+    </div>
+
+    
+    <!-- Description and Button -->
+    <div class="description-box">
+      <p class="intro-text">
+        Welcome to VELOUR MUSE, where style meets individuality.<br/>
+        A brand for designer clothes & timeless pieces that blend elegance with modern trends, empowering you to express your unique fashion identity.
+      </p>
+
+      <a href="body.html"><button class="shop-now">Shop Now</button></a>
+    </div>
+
+    <div class="bottom-right-thumbnails">
+
+      <img src="https://img4.dhresource.com/webp/m/260x260/f3/albu/jc/l/22/ed309d56-664b-4dbb-a364-3ad8019e5378.jpg" alt="Thumbnail 1" />
+      <img src="https://img4.dhresource.com/webp/m/f3/albu/jc/l/14/7b7c43a0-b6ec-4b26-b036-21aa4a8619ea.jpg" alt="Thumbnail 2" />
+    </div>
+    
+  </main>
+</body>
+</html>
